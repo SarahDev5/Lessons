@@ -12,6 +12,7 @@ header {
   color: white;
   text-align: center;
   padding: 2rem 1rem;
+  border-radius: 12px;
 }
 
 header h1 {
@@ -80,7 +81,8 @@ nav {
   justify-content: center; /* centers the entire nav content */
   align-items: center;
   flex-direction: column; /* stacks logo and links vertically if needed */
-  padding: 20px 200px;
+  padding: 1px 200px;
+  padding-bottom: 15px;
   background: linear-gradient(
     185deg,                /* diagonal angle */
     #080e2b,               /* dark blue */
@@ -129,15 +131,14 @@ nav a {
 }
 
 .nav-button.active {
-  background-color: rgb(8, 54, 100);
+  background-color: rgb(69, 76, 82);
   color: white;
+  text-decoration:underline;
 }
   
 html {
   scroll-padding-top: 100px; /* equal to nav height */
 }
-
-
 
 .menu-toggle {
   display: none;
@@ -247,12 +248,9 @@ html {
 
 /* Sections */
 section {
-  padding: 100px 20px;
+  padding: 70px 20px;
   min-height: 100vh;
 }
-
-
-  
 
 /* Form */
 form {
