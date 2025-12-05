@@ -1,15 +1,20 @@
 // script.js
-const navButtons = document.querySelectorAll(".nav-button");
+const navButtons = document.querySelectorAll('.nav-button');
 
 navButtons.forEach(button => {
-  button.addEventListener("click", () => {
-    // remove active from all
-    navButtons.forEach(btn => btn.classList.remove("active"));
-    // add active to clicked one
-    button.classList.add("active");
+  button.addEventListener('click', () => {
+    navButtons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');  
+    navLinks.classList.toggle("show");
   });
 });
 
+const toggleBtn = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+
+toggleBtn.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+});
 
 // Example JavaScript file
 // You can use this to add custom behavior, analytics, or interactivity
